@@ -1,0 +1,30 @@
+.battery {
+    height: 100px;
+    width: 300px;
+    border: 6px solid black;  
+    margin-bottom: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.red {
+    background: linear-gradient(to right, red 30%, transparent 30%);   
+}
+
+.yellow {
+    background: linear-gradient(to right, yellow 60%, transparent 60%);  
+}
+
+.green {
+    background: green;   
+}
+
+.battery::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background: black;
+    right: -26px;
+    top: 24px;
+}
